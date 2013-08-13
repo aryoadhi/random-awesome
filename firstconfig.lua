@@ -1,5 +1,4 @@
 -- Standard awesome library
--- save as ~/.config/awesome/rc.lua
 local gears = require("gears")
 local awful = require("awful")
 awful.rules = require("awful.rules")
@@ -39,8 +38,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
--- set it to your username
-beautiful.init("/home/username/.config/awesome/themes/theme.lua")
+beautiful.init("/home/aryo_adhi/.config/awesome/themes/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
@@ -76,9 +74,8 @@ end
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {}
-for s = 1, screen.count() do
-    -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+    for s = 1, screen.count() do
+    tags[s] = awful.tag({ "Ч", "о", "р", "н", "о", "б", "и", "л", "ь", "с", "ь", "к", "а" }, s, layouts[1])
 end
 -- }}}
 
